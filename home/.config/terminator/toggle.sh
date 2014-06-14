@@ -7,7 +7,7 @@
 # In Ubuntu, this is done in Settings > Keyboard > Shortcuts
 
 TM_STATE=/tmp/tm_stat
-WIN=$( wmctrl -lGx | grep -i terminator | awk '{print $1}' );
+WIN=$( wmctrl -lGx | awk '{print $1,$7}' | grep -i terminator | awk '{print $1}' );
 
 if [[ $WIN == "" ]]
 then
