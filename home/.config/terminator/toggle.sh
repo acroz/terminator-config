@@ -3,6 +3,9 @@
 # Script to toggle terminator's visibility state, and bring to current
 # workspace if necessary
 
+# To use, add a keyboard shortcut that executes this script
+# In Ubuntu, this is done in Settings > Keyboard > Shortcuts
+
 TM_STATE=/tmp/tm_stat
 WIN=$( wmctrl -lGx | grep -i terminator | awk '{print $1}' );
 
