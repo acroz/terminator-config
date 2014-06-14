@@ -9,20 +9,29 @@
   next_tab = <Primary>Page_Up
   prev_tab = <Primary>Page_Down
 [profiles]
-  [[default]]
-    palette = "#272822:#f92672:#a6e22e:#f4bf75:#66d9ef:#ae81ff:#a1efe4:#f8f8f2:#75715e:#f92672:#a6e22e:#f4bf75:#66d9ef:#ae81ff:#a1efe4:#f9f8f5"
+  [[solarized]]
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
     background_image = None
+    use_system_font = False
     cursor_color = "#f8f8f2"
-    foreground_color = "#f8f8f2"
-    background_color = "#272822"
+    foreground_color = "#839496"
+    font = Ubuntu Mono 12
+    background_color = "#002b36"
+  [[monokai]]
+    background_image = None
+    use_system_font = False
+    palette = "#000000:#f92672:#6cc72c:#fe9720:#5f91ef:#9358fe:#36af90:#8c8c8c:#4c4c4c:#ff80f4:#a7e22e:#ffee99:#5fd9ef:#ae82fe:#66efd5:#c7cece"
+    foreground_color = "#ffffff"
+    font = Ubuntu Mono 12
+    background_color = "#0d0d0d"
 [layouts]
   [[default]]
     [[[child1]]]
       type = Terminal
       parent = window0
-      profile = default
+      profile = monokai
     [[[window0]]]
       type = Window
       parent = ""
       size = 1623, 876
-	  position = 180:24
+      position = 180:24
