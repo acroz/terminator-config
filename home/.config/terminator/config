@@ -2,27 +2,19 @@
   enabled_plugins = APTURLHandler, LaunchpadCodeURLHandler, LaunchpadBugURLHandler
   title_hide_sizetext = True
   sticky = True
-  borderless = True
-  geometry_hinting = False
   hide_from_taskbar = True
   title_transmit_bg_color = "#f92672"
   title_inactive_bg_color = "#75715e"
-
 [keybindings]
   next_tab = <Primary>Page_Up
-  hide_window = F1
   prev_tab = <Primary>Page_Down
 [profiles]
   [[default]]
-    use_custom_command = True
-    use_system_font = False
-    font = Ubuntu Mono derivative Powerline 12
-    custom_command = /bin/zsh
     palette = "#272822:#f92672:#a6e22e:#f4bf75:#66d9ef:#ae81ff:#a1efe4:#f8f8f2:#75715e:#f92672:#a6e22e:#f4bf75:#66d9ef:#ae81ff:#a1efe4:#f9f8f5"
+    background_image = None
+    cursor_color = "#f8f8f2"
     foreground_color = "#f8f8f2"
     background_color = "#272822"
-    cursor_color = "#f8f8f2"
-
 [layouts]
   [[default]]
     [[[child1]]]
@@ -32,53 +24,5 @@
     [[[window0]]]
       type = Window
       parent = ""
-  [[large]]
-    [[[child0]]]
-      position = 56:24
-      type = Window
-      order = 0
-      parent = ""
       size = 1623, 876
-    [[[terminal1]]]
-      profile = default
-      type = Terminal
-      order = 0
-      parent = child0
-  [[quake]]
-    [[[child0]]]
-      position = 135:24
-      type = Window
-      order = 0
-      parent = ""
-      size = 1399, 961
-    [[[child1]]]
-      position = 755
-      type = HPaned
-      order = 0
-      parent = child0
-      profile = None
-    [[[child3]]]
-      position = 457
-      type = VPaned
-      order = 1
-      parent = child1
-    [[[terminal2]]]
-      profile = zsh
-      type = Terminal
-      order = 0
-      parent = child1
-      command = ""
-    [[[terminal5]]]
-      profile = zsh
-      type = Terminal
-      order = 1
-      parent = child3
-      command = ""
-    [[[terminal4]]]
-      profile = zsh
-      type = Terminal
-      order = 0
-      parent = child3
-      command = htop
-[plugins]
-
+	  position = 180:24
